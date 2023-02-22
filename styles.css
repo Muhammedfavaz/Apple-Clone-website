@@ -389,7 +389,7 @@ header{
         width: 100vw;
         top: 48px; 
         left: -150%;
-        height: 80%;
+        height: 100%;
         text-align: inherit;
         background: #000;
         transition: all 800ms;
