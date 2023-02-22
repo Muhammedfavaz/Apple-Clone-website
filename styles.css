@@ -329,11 +329,7 @@ header{
          margin-top: -170px;
          font-size: 40px;
      }
-     .iphon14pro-indro img{
-        height: 67%;
-        width: 75%;
-        margin-top: 214px;
-     }
+     
       
 }@media(max-width: 599px){
     .BOXES {
@@ -413,8 +409,13 @@ header{
         
         width: 20px;
     }
+   .iphon14pro-indro img{
+        height: 67%;
+        width: 100%;
+        margin-top: 355px;
+     }
 
-
+kdief
 
     
 }
