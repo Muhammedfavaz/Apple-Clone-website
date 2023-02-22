@@ -427,6 +427,7 @@ header{
         width: 100%;
         
      }.i14pro-indro{
+        
         margin-top: 110px;
      }
      .i14pro-indro h1{
@@ -438,6 +439,10 @@ header{
         height: 50%;
         padding-bottom: 10px;
      }.ftr-provides{
+        display: none;
+     }.iphon14pro-indro{
+        display: none;
+     }.i14pro-indro{
         display: none;
      }
 
