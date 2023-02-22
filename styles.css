@@ -9,13 +9,22 @@ body{
     width: 100%;
     height:48px ;
     background: #000;
-}header{
+}header #check{
+    display: none;
+}
+header label{
+    display: none;
+}
+.responce-phn{display: none;}
+.responce-phn1{display: none;}
+header{
     position: fixed;
     z-index: 3;
     width: 100%;
     height: 48px;
     background-color: #000;
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
@@ -28,7 +37,7 @@ body{
     align-items:center ;
     justify-content: center;
     justify-content: space-between; 
-    flex-wrap: nowrap;  
+    flex-wrap: wrap;  
     color: #fff;
 }header > ul > li{
     list-style: none;
@@ -54,8 +63,8 @@ body{
 }.blur-bnck > img{
     width: 100%;
     height: 100vh;
-   opacity: 65%;
-   position:relative;
+    opacity: 65%;
+    position:relative;
 }.add-text{
     position: absolute;
     top: 50%;
@@ -100,7 +109,7 @@ body{
     color: #fff;
 }.iphon14pro-indro{ 
     width: 100%;
-    height: 540px;
+    height: 100vh;
     background: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
@@ -108,7 +117,7 @@ body{
 }.iphon14pro-indro img{
     position: relative;
     width: 50%;
-    height: 540px;    
+    height: 100%;    
 }.i14pro-indro{
     position: absolute;
     top: 150%;
@@ -174,6 +183,7 @@ body{
     object-fit: cover;
 }.product-boxes{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
     background:#ffffff;
@@ -184,7 +194,7 @@ body{
     background: #000;
     margin-bottom: 10px;
     margin-right: 6px;
-    margin-left: 15px;
+    margin-left: 6px;
 }.macinfo{
     padding-top: 20px;
     font-family: 'Roboto', sans-serif;
@@ -215,7 +225,7 @@ body{
     background: #ffffff;
     margin-bottom: 10px;
     margin-right: 6px;
-    margin-left: 15px;
+    margin-left: 6px;
 }.ipadBOXES .macinfo{
     color: #000;
 }.ipadBOXES .macinfo img{
@@ -228,7 +238,7 @@ body{
     background: #ffffff;
     margin-bottom: 10px;
     margin-right: 6px;
-    margin-left: 15px;    
+    margin-left: 6px;    
 }.giftBOXES .macinfo img{
     width: 100%;
     height: 100%;
@@ -270,8 +280,9 @@ body{
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
     color: #6e6e73;
 }.ftr-provides{
+    width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     line-height: 1.8;
 }.ftr-provides .ftr ul {
     list-style: none;
@@ -280,4 +291,130 @@ body{
 }
 .ftr-provides .ftr ul li{
     margin-left: -40px;
+}
+
+@media(min-width: 779px) and (max-width: 992px){
+    .add-text{
+       display: flex;
+       flex-wrap: nowrap;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    } 
+    .add-text > h1{
+       font-size: 80px;
+       margin-bottom: 90px;
+
+    } 
+    .i14pro-indro h1{
+        margin-top: 0px;
+    } 
+}@media(max-width: 778px){
+    .add-text{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     } 
+     .add-text > h1{
+        font-size: 60px;
+        margin-bottom: 90px;
+ 
+     } 
+     .add-text .phn{
+        display: flex;
+     }
+     .i14pro-indro h1{
+         margin-top: -170px;
+         font-size: 40px;
+     }
+     .iphon14pro-indro img{
+        height: 67%;
+        width: 75%;
+        margin-top: 214px;
+     }
+      
+}@media(max-width: 599px){
+    .BOXES {
+        width: 78%;
+        height: 444px;
+        margin-top: 40px;
+        margin-bottom: 0px;   
+    }
+    .ipadBOXES{
+        width: 78%;
+        height: 100%;
+    }
+    .giftBOXES{
+        width: 78%;
+        height: 100%;
+    }
+    .lefthand-righthand img{
+        width: 49%;
+
+    }
+}
+
+
+@media(max-width: 997px){
+    .hdr-cvr{
+        display: flex;
+        align-items: center;
+    }.hdr-cvr .responce-phn1{
+        position: fixed;
+        display: block;
+        z-index: 9;
+        margin-left: 8px;
+    }header{
+        display: flex;
+        justify-content: flex-end;
+    }.responce-phn{
+        margin-right: 50px;
+
+    }header ul a{
+        display: none;
+    }header > ul{
+        position: fixed ;
+        display: block;
+        width: 100vw;
+        top: 48px; 
+        left: -150%;
+        height: 80%;
+        text-align: inherit;
+        background: #000;
+        transition: all 800ms;
+
+    }header > ul > li{
+        margin-top: 40px;
+        margin-bottom: -20px;
+        font-size: 18px;
+        font-weight: 700;
+    }header #check{
+        display: block;
+    }header label{
+        display: block;
+        color: #ffffff;
+        font-size: 18px;
+        margin-right: 18px;
+
+    }#check:checked ~ ul{
+        left: 0%;
+    }#check:checked ~ label i::before{
+        content: '\f057';
+    }header #check{
+        display: none;
+    }.responce-phn{
+        display: block;
+
+    }.responce-phn img{
+        width: 20px ;
+    }.responce-phn1 img{
+        
+        width: 20px;
+    }
+
+
+
+    
 }
