@@ -340,10 +340,13 @@ header{
     .BOXES {
         width: 97%;
         height: 444px;
-        margin-bottom: 100px;   
+        margin-bottom: 27px;
+        margin-top: 90px;
     }.BOXES-watch{
         width: 97%;
         height: 444px;
+        margin-bottom: -76px;
+
     }
     .ipadBOXES{
         width: 97%;
@@ -424,10 +427,9 @@ header{
         width: 100%;
         
      }.i14pro-indro{
-        margin-top: 30px;
+        margin-top: 10px;
      }
      .i14pro-indro h1{
-         margin-top: -190px;
          font-size: 40px;
      }.blur-bnck img{
         width: 100%;
