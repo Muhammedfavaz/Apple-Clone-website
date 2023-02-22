@@ -340,7 +340,7 @@ header{
     .BOXES {
         width: 97%;
         height: 444px;
-        margin-bottom: 27px;
+        margin-bottom: -78px;
         margin-top: 90px;
     }.BOXES-watch{
         width: 97%;
@@ -427,7 +427,7 @@ header{
         width: 100%;
         
      }.i14pro-indro{
-        margin-top: 10px;
+        margin-top: 110px;
      }
      .i14pro-indro h1{
          font-size: 40px;
