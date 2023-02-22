@@ -195,7 +195,16 @@ header{
     margin-bottom: 10px;
     margin-right: 6px;
     margin-left: 6px;
-}.macinfo{
+}.BOXES-watch{
+    margin: 0;
+    width: 48%;
+    height: 700px;
+    background: #000;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+.macinfo{
     padding-top: 20px;
     font-family: 'Roboto', sans-serif;
     margin-top: 0px;
@@ -325,25 +334,26 @@ header{
      .add-text .phn{
         display: flex;
      }
-     .i14pro-indro h1{
-         margin-top: -170px;
-         font-size: 40px;
-     }
      
       
 }@media(max-width: 599px){
     .BOXES {
-        width: 78%;
+        width: 97%;
         height: 444px;
-        margin-top: 40px;
-        margin-bottom: 0px;   
+        margin-bottom: 114px;   
+    }.BOXES-watch{
+        width: 97%;
+        height: 444px;
     }
     .ipadBOXES{
-        width: 78%;
+        width: 97%;
         height: 100%;
+        margin-top: 0px;
+    }.ipadBOXES .macinfo img{
+        height: -1%;
     }
     .giftBOXES{
-        width: 78%;
+        width: 97%;
         height: 100%;
     }
     .lefthand-righthand img{
@@ -410,12 +420,26 @@ header{
         width: 20px;
     }
    .iphon14pro-indro img{
-        height: 67%;
+        height: 100%;
         width: 100%;
-        margin-top: 355px;
+        
+     }.i14pro-indro{
+        margin-top: 30px;
+     }
+     .i14pro-indro h1{
+         margin-top: -170px;
+         font-size: 40px;
+     }.blur-bnck img{
+        width: 100%;
+        height: 100vh;
+     }.imove{
+        height: 50%;
+        padding-bottom: 10px;
+     }.ftr-provides{
+        display: none;
      }
 
-kdief
+
 
     
 }
